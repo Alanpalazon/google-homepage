@@ -3,23 +3,54 @@
 }
 
 
+
 /* Header styles*/
 
 header{
-    background-color: grey; /*REMOVE LATER*/
     display: flex;
     justify-content: flex-end;
+    font-family: 'Akaya Telivigala', cursive;
+    margin-top: 15px;
 }
 
 .header-child{
-    border: 1px solid purple;
     display: flex;
-    justify-content: center;
-    align-content: center;
+    align-items: center;
+    margin: 0px 10px;  
 }
 
 #h-child-1{
-    justify-self: flex-start;
+    margin-right: auto;
 }
+
+.header-a:hover{
+    text-decoration: underline;
+}
+
+.h-child-1-p{
+    margin: 5px;
+}
+
+.header-a{
+    text-decoration: none;
+}
+
+.header-img:hover{
+    box-shadow: 0 0 0 4px rgba(217, 217, 217);
+    border-radius: 50%;
+}
+
+
+#h-img-1{
+    width: 35px;
+    height: 35px;
+}
+
+#h-img-2{
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
+
 
 /*End*/
