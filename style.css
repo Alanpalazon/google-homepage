@@ -4,7 +4,7 @@
 
 
 
-/* Header styles*/
+/* Header*/
 
 header{
     display: flex;
@@ -53,4 +53,47 @@ header{
 }
 
 
+/*End*/
+
+/*Main*/
+
+.main-div-container{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.main-flex-child{
+    border: 1px solid yellow;
+    background-color: royalblue;
+    margin: 12px auto;
+}
+
+#google-logo{
+    height: 90px;
+    width: 220px;
+}
+
+#m-flex-1,
+#m-flex-3{
+    width: 50%;
+}
+
+#m-flex-2{
+    width: 60%;
+    border-radius: 20px;
+    height: 45px;
+}
+
+#mag-glass-img{
+    width: 15px;
+    height:15px;
+}
+
+.m-flex-3-child{
+    border: 1px solid blue;
+    width: 40%;
+    height: 20px;
+}
 /*End*/
