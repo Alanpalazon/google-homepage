@@ -1,7 +1,23 @@
 *{
     box-sizing: border-box;
-    font-size: 15px;
+    font-size: 10px;
 }
+
+/*Body*/
+
+body{
+    border: 1px solid black;
+    min-height: 100vh;
+    
+    display: flex;
+    flex-direction: column;
+}
+ 
+
+
+
+
+/*End*/
 
 
 /* Header*/
@@ -11,6 +27,7 @@ header{
     justify-content: flex-end;
     font-family: 'Akaya Telivigala', cursive;
     margin-top: 15px;
+    border: 1px solid red;
 }
 
 .header-child{
@@ -64,12 +81,12 @@ header{
 /*Main*/
 
 .main-container{
-    /* background-color: blue; */
     display: flex;
     flex-direction: column;
-    max-width: 60%;
-    margin: 0 auto;
-   
+    max-width: 600px;
+    min-width: 250px;
+    margin: 30px auto;
+    
 }
 
 .main-flex-child{
@@ -80,9 +97,14 @@ header{
     height: 80px;
     width: 90%;
     margin-left: 5%;
-    margin-right: 5%;
-    
+    margin-right: 5%; 
 } 
+
+#google-logo:hover{
+   background-color: rgba(125, 122, 230, 0.1);
+   border-radius: 50%;
+   transition-duration: 0.5s;
+}
 
 #m-flex-1,
 #m-flex-3{
@@ -91,35 +113,47 @@ header{
 
 #m-flex-2{
     width: 70%;
+    min-width: 248px;
     border-radius: 20px;
-    height: 46px;
+    height: 25px;
     background-color: rgba(125, 122, 230, 0.3);
-    border: none;
+
+}
+
+#m-flex-2:hover,
+.m-flex-3-child:hover{
+    box-shadow: 0 1px 0 1px   rgba(125, 122, 240, 0.3);
+    transition-duration: 0.2s;
 }
 
 
 #mag-glass-img{
-    width: 15px;
-    height:15px;
+    width: 10px;
+    height:10px;
     position: relative;
+    top: 7px;
     left: 15px;
-    top: 12px;
+    
 }
 
 #m-flex-3{
     display: flex;
-    justify-content: space-between; 
-
+    justify-content: center; 
+    height: 50%;
+    width: 50%;
+    min-width: 220px;
 }
 
 .m-flex-3-child{
-    /* border: 1px solid blue; */
-    margin: 10px;  
+    margin: 0 1%;  
     background-color: rgba(125, 122, 230, 0.3);
-    border-radius: 5px;
+    border-radius: 2px;
+    padding: 0 10px;
+    height: 15px;
+    font-size: 8px;
+    min-width: 70px;
     border: none;
-    height: 42px;
-    padding: 10px;
+
     
 }
 
@@ -127,6 +161,10 @@ header{
 
 /*Footer*/
 
+footer{
+    border: 1px solid orange;
+    margin-top: auto;
+}
 
 .footer-child{
     border: 1px solid black;
@@ -138,14 +176,40 @@ header{
 
 #f-child-2{
     display: flex;
-    align-content: center;
-    bottom: 0;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    /*need to flex grow or wrap in some way the first and 3rd children to new row 
+    when vp too narrow*/
+
+}
+
+.f-child-2-c{
+    border: 1px solid red;
 }
 
 #f-child-2-c-1,
 #f-child-2-c-3{
     display: flex;
 }
+
+#f-child-2-c-2{
+    
+    margin: 0 auto;
+}
+
+#tree{
+    width: 10px;
+    height: 10px;
+}
+
+
+/* #f-child-2-c-1{
+    order: 1;
+}
+
+#f-child-2-c-3{
+    order: 2;
+} */
 
 .f-child-a{
     padding: 10px;
